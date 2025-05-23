@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="prog.css">
+        <style>
+            .container {
+                background-color: rgb(24, 187, 209);
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                margin: 20px;
+            }
+            .card {
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                padding: 10px;
+                margin: 10px;
+                width: 200px;
+                text-align: center;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                animation: float 3s ease-in-out infinite;
+            }
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+            }
+            @keyframes float {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+            .card img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card"><img src="a.png" alt="Image A"></div>
+            <div class="card"><img src="b.png" alt="Image B"></div>
+            <div class="card"><img src="c.png" alt="Image C"></div>
+            <div class="card"><img src="d.png" alt="Image D"></div>
+        </div>
+    </body>
+</html>

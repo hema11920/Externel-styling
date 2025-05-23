@@ -1,0 +1,15 @@
+.container{
+    background-color: rgb(24, 187, 209);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+.p{
+    color: rgb(211, 10, 10);
+    font-size: 30;
+    padding: 45px;
+    display : inline;
+}
